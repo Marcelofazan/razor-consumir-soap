@@ -6,7 +6,7 @@ Exemplo de consumo de WebServices utilizando SOAP em localhost.
 
 Criação do servidor SOAP (http://localhost:54222/PessoaService.asmx)   
 
-A criação de exemplo encontra-se nesse link (https://github.com/Marcelofazan/soap-provedor-database) 
+#### Disponivel em [soap-provedor-database](https://github.com/Marcelofazan/soap-provedor-database/archive/refs/heads/main.zip)
 
 #### O que você vai encontrar neste projeto
 
