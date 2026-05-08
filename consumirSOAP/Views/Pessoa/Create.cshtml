@@ -1,0 +1,63 @@
+﻿@model consumirSOAP.Models.Pessoa
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@if (ViewBag.Erro != null)
+{
+    <div class="alert alert-danger">@ViewBag.Erro</div>
+}
+
+@if (TempData["Mensagem"] != null)
+{
+    <script>
+        alert('@TempData["Mensagem"]');
+    </script>
+}
+
+<h4>Add New Pessoa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div class="row">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Nome" class="control-label"></label>
+                        <input asp-for="Nome" class="form-control" />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Senha" class="control-label"></label>
+                        <input asp-for="Senha" class="form-control" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<consumirSOAP.Models.Pessoa>
+
+@{
+    ViewData["Title"] = "Pessoas Lista";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-primary"><i class="fa-solid fa-plus"></i> Add New Pessoa</a>
+</p>
+<table class="table  table-bordered table-hover table-responsive-lg">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Senha)
+            </th>
+            <th>Edit</th>
+            <th>View</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Senha)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" class="btn btn-outline-primary" asp-route-email="@item.Email"><i class="fa-solid fa-pencil"></i> Edit</a>
+                    </td>
+                    <td>
+                        <a asp-action="Details" class="btn btn-outline-info" asp-route-email="@item.Email"><i class="fa-solid fa-bullseye"></i> Details</a>
+                    </td>
+                    <td>
+                        <a asp-action="Delete" class="btn btn-outline-danger" asp-route-email="@item.Email"><i class="fa-solid fa-trash"></i> Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <p>Nenhum produto encontrado.</p>
+        }
+    </tbody>
+</table>

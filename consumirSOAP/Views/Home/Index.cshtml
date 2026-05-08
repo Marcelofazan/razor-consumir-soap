@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if (ViewBag.Registro != null)
+{
+    <div class="alert alert-danger">@ViewBag.Registro</div>
+}
+
+<div class="form-group">
+    <p class="mb-1">
+        <a href="@Url.Action("Index", "Pessoa")" class="nav-link active">Acessar Crud Soap</a>
+    </p>
+</div>
