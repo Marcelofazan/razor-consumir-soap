@@ -4,7 +4,6 @@ Exemplo de consumo de WebServices utilizando SOAP em localhost.
 
 ### Requisitos
 
-Criação do servidor SOAP (http://localhost:54222/PessoaService.asmx)   
 - Disponivel em [soap-provedor-database](https://github.com/Marcelofazan/soap-provedor-database/archive/refs/heads/main.zip)
 
 #### O que você vai encontrar neste projeto
@@ -13,4 +12,4 @@ Criação do servidor SOAP (http://localhost:54222/PessoaService.asmx)
 
 #### Execução da aplicação
 
-Para executar a aplicação é necessário, rodar antes o soap-provedor-database.
+Para executar a aplicação é necessário, rodar antes o soap-provedor-database. (http://localhost:54222/PessoaService.asmx)   
