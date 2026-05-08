@@ -11,6 +11,6 @@ Criação do servidor SOAP (http://localhost:54222/PessoaService.asmx)
 
 - **Client SOAP** - Manipulação de métodos CRUD para enviar/receber dados.
 
-## Execução da aplicação
+#### Execução da aplicação
 
-Para executar a aplicação é necessário, seguir somente o requesito.  
+Para executar a aplicação é necessário, rodar antes o soap-provedor-database.
