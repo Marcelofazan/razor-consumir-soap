@@ -2,7 +2,7 @@
 Exemplo de consumo de WebServices utilizando SOAP em localhost.
 
 ### Execução da aplicação
-Executa a aplicação Backend **WebAPI-Mobile-MySQL** que se encontra no Github.
+Executa a aplicação Backend **Soap-Provedor-Database** que se encontra no Github.
 - [Soap-Provedor-Database](https://github.com/Marcelofazan/soap-provedor-database)
 
 #### O que você vai encontrar neste projeto
