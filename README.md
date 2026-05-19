@@ -6,6 +6,6 @@ Exemplo de consumo de WebServices utilizando SOAP em localhost.
 |-----------|-----------|
 | **Client SOAP**  | Manipulação de métodos CRUD para enviar/receber dados. |
 
-#### ⚙️ Execução da aplicação
+#### 🛠️ Execução da aplicação
 - Para executar a aplicação é necessário, rodar antes o soap-provedor-database. **(http://localhost:54222/PessoaService.asmx)**   
 - A aplicação Backend **Soap-Provedor-Database** que se encontra no Github. [Soap-Provedor-Database](https://github.com/Marcelofazan/soap-provedor-database)
